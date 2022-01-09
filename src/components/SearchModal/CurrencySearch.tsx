@@ -194,7 +194,7 @@ export function CurrencySearch({
         </AutoSizer>
       </StyledTokenList>
 
-      <Separator />
+      {/*<Separator />
       <Card>
         {selectedListInfo.multipleSelected ? (
           <LinkStyledButton
@@ -227,7 +227,7 @@ export function CurrencySearch({
             </LinkStyledButton>
           </RowBetween>
         )}
-      </Card>
+      </Card>*/}
     </Column>
   )
 }

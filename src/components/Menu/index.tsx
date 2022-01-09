@@ -39,26 +39,26 @@ export default function Menu() {
 
       {open && (
         <NarrowMenuFlyout>
-          <MenuItem id="link" href="https://github.com/trisolaris-labs">
+{/*          <MenuItem id="link" href="https://github.com/trisolaris-labs">
             <GitHub size={14} />
             {t('menu.code')}
           </MenuItem>
           <MenuItem id="link" href="https://trisolaris-labs.github.io/docs/">
             <Book size={14} />
             {t('Docs')}
-          </MenuItem>
-          <MenuItem id="link" href="https://t.me/TrisolarisLabs">
+          </MenuItem> */}
+          <MenuItem id="link" href="https://t.me/ufomoneydefi">
             <Send size={14} />
             {t('menu.telegram')}
           </MenuItem>
-          <MenuItem id="link" href="http://discord.gg/my6GtSTmmX">
+          <MenuItem id="link" href="https://discord.gg/GEHTF93JFU">
             <MessageCircle size={14} />
             {t('menu.discord')}
           </MenuItem>
-          <MenuItem id="link" href="https://twitter.com/trisolarislabs">
+{/*          <MenuItem id="link" href="https://twitter.com/trisolarislabs">
             <Twitter size={14} />
             {t('menu.twitter')}
-          </MenuItem>
+          </MenuItem>*/}
         </NarrowMenuFlyout>
       )}
     </StyledMenu>

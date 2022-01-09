@@ -12,7 +12,7 @@ import { ButtonSecondary } from '../Button'
 
 import { RedCard } from '../Card'
 import Menu from '../Menu'
-import BridgesMenu from '../BridgesMenu'
+/*import BridgesMenu from '../BridgesMenu'*/
 
 import Row, { RowFixed } from '../Row'
 import Web3Status from '../Web3Status'
@@ -259,7 +259,7 @@ export default function Header() {
             </TRIIcon>
           </Title>
           <StyledHomeNavLink id={`home-link`} to={'/'}>
-            Trisolaris
+            UFO Money
           </StyledHomeNavLink>
         </HomeContainer>
         <HeaderLinks>
@@ -279,22 +279,22 @@ export default function Header() {
           >
             {t('header.pool')}
           </StyledNavLink>
-          <StyledNavLink id={`xtri-nav-link`} to={'/stake'} isActive={Boolean}>
-            {t('header.stake')}
-          </StyledNavLink>
-          <StyledNavLink
+{/*          <StyledNavLink
             id={`png-nav-link`}
             to={'/farm/1'}
             isActive={(match, { pathname }) => Boolean(match) || pathname.startsWith('/png')}
           >
             {t('header.farm')}
           </StyledNavLink>
-          <BridgesMenu />
+          <StyledNavLink id={`xtri-nav-link`} to={'/stake'} isActive={Boolean}>
+            {t('header.stake')}
+          </StyledNavLink>*/}
+{/*          <BridgesMenu />*/}
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
         <HeaderElement>
-          <TRIWrapper active={true}>
+{/*          <TRIWrapper active={true}>
             <TRIButton
               onClick={e => {
                 e.currentTarget.blur()
@@ -313,7 +313,7 @@ export default function Header() {
               </Text>
             </TRIButton>
             <TriPriceModal />
-          </TRIWrapper>
+          </TRIWrapper>*/}
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
             <Web3Status />
           </AccountElement>
