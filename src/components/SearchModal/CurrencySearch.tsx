@@ -35,11 +35,11 @@ interface CurrencySearchProps {
 
 const StyledTokenList = styled(Column)`
   flex: 1;
-  background: ${({ theme }) => theme.bg3}
+  background: ${({ theme }) => theme.bg3};
 `
 
 const StyledSearchInput = styled(SearchInput)`
-  background: ${({ theme }) => theme.bg3}
+  background: ${({ theme }) => theme.bg3};
 `
 
 export function CurrencySearch({
@@ -76,7 +76,7 @@ export function CurrencySearch({
 
   const showETH: boolean = useMemo(() => {
     const s = searchQuery.toLowerCase().trim()
-    return s === '' || s === 'e' || s === 'et' || s === 'eth'
+    return s === '' || s === 'b' || s === 'bn' || s === 'bnb'
   }, [searchQuery])
 
   const tokenComparator = useTokenComparator(invertSearchOrder)
